@@ -1,0 +1,34 @@
+{
+  "name": "cdktf-github-duty",
+  "version": "1.0.0",
+  "main": "main.js",
+  "types": "main.ts",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "get": "cdktf get",
+    "build": "tsc",
+    "synth": "cdktf synth",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "test": "echo ok",
+    "upgrade": "npm i cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "npm i cdktf@next cdktf-cli@next"
+  },
+  "engines": {
+    "node": ">=10.12"
+  },
+  "dependencies": {
+    "@cdktf/provider-aws": "^1.0.99",
+    "@cdktf/provider-github": "^0.1.95",
+    "@types/aws-lambda": "^8.10.77",
+    "cdktf": "^0.4.1",
+    "constructs": "^3.3.84",
+    "esbuild": "^0.12.9",
+    "iam-floyd": "^0.197.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.3",
+    "typescript": "^4.3.4"
+  }
+}
